@@ -1,0 +1,712 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, img, small, div, a {
+  font-family: "Inter", sans-serif;
+}
+
+.header-second .active {
+  background-color: #cb6263;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+p {
+  color: #acb3b8;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.questions, .f-a-q, .price-chart-holder, .chart, .service-article-first, .let-us-know, .contact-info-holder, .about-mission, .about-service, footer, .clients, .solution div, .services, .team {
+  padding: 80px 0;
+}
+
+.f-a-q, .price-chart-holder, .service-article-first, .grab-deal-article, .let-us-know, .contact-info-holder article, .about-service, .footer-holder, .clients-holder, .consulting .consultancy-article-third, .consulting .consulting-second-holder, .consulting .consultancy-article-first, .solution div, .service-holder, .team-holder, .hero .hero-text, .header-second .container, .header-top .container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.navitem, .questions, .price-chart-holder, .service-article-first, .grab-deal-article, .map-holder, .contact-card-holder, .about-mission .about-mission-holder .about-mission-card, .about-mission, .about-service-text, .footer-holder, .clients-holder, .consulting .consultancy-article-third, .consulting .consulting-second-holder, .consulting .consultancy-article-first, .service-holder, .team-holder, .header-second .container, .header-top .container, .socialmedia-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item button, .grab-deal-article button, .let-us-know button, .consulting .consultancy-article-second button, .hero .hero-text button, .service-holder .service-card button, .team-holder .service-card button, .consulting .consultancy-article-first button, .solution button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.consulting .consultancy-article-first button, .solution button {
+  background-color: transparent;
+  color: #dd3a45;
+  border: 1px solid #dd3a45;
+  border-top: 1px solid #f8dfe1;
+}
+
+.service-holder .service-card button, .team-holder .service-card button {
+  background-color: transparent;
+  color: #dd3a45;
+  border: 1px solid #dd3a45;
+  border-bottom: 1px solid #f8dfe1;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.header-top a {
+  color: #fff;
+}
+.header-top span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.socialmedia-info {
+  width: 15%;
+}
+.socialmedia-info li {
+  margin-right: 20px;
+}
+
+.contact-info {
+  width: 45%;
+}
+.contact-info span {
+  font-size: 12px;
+}
+
+.header-top {
+  background-color: #dd3a45;
+  padding: 10px;
+}
+.header-second {
+  background-color: #f3f2f3;
+}
+.header-second .container {
+  align-items: center;
+}
+.header-second .navbar a {
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  padding: 20px 10px;
+}
+.header-second .navbar a:hover {
+  background-color: #dd3a45;
+  color: #fff;
+}
+.header-second .navbar a .pages a {
+  padding: 0;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 900;
+}
+.brand .brand-color {
+  color: #dd3a45;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+}
+.hero .hero-text {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 13%;
+  z-index: 99;
+}
+.hero .hero-text h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.hero .hero-text p {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.hero .hero-text button {
+  background-color: #dd3a45;
+  color: #fff;
+}
+
+.services, .team {
+  text-align: center;
+}
+.services .service-subheading, .team .service-subheading {
+  margin: 20px 0 50px 0;
+}
+
+.service-holder .service-card, .team-holder .service-card {
+  width: 30%;
+  border: 1px solid #ebeaea;
+  border-radius: 5px;
+  padding: 20px;
+}
+.service-holder .service-card img, .team-holder .service-card img {
+  width: 30%;
+}
+.service-holder .service-card p, .team-holder .service-card p {
+  margin: 30px 0 50px 0;
+}
+.solution {
+  background-color: #f8f8fb;
+}
+.solution div {
+  text-align: center;
+  width: 50%;
+}
+.solution div p {
+  margin: 40px 0;
+}
+.consulting .consulting-text {
+  text-align: center;
+}
+.consulting .consulting-text img {
+  width: 30%;
+}
+.consulting .consulting-media img {
+  width: 100%;
+}
+.consulting p {
+  padding: 20px 0;
+}
+.consulting h4 {
+  font-weight: 900;
+  font-size: 22px;
+}
+.consulting .consultancy-article-first {
+  margin-top: 100px;
+}
+.consulting .consultancy-article-first div {
+  width: 45%;
+}
+.consulting .consultancy-article-second {
+  background-color: #dd3a45;
+  padding: 30px 0;
+  margin: 100px 0 100px 0;
+}
+.consulting .consultancy-article-second button {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #f0818a;
+}
+.consulting .consulting-second-holder {
+  color: #fff;
+}
+.consulting .consulting-second-holder p {
+  color: #fff;
+  font-weight: 300;
+}
+.consulting .consulting-second-holder h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.consulting .consultancy-article-third {
+  align-items: center;
+}
+.consulting .consultancy-article-third div {
+  width: 45%;
+}
+.consulting .consultancy-article-third p {
+  line-height: 2;
+}
+.consulting .consultancy-article-third h4 {
+  font-weight: 900;
+}
+
+.clients {
+  background-color: #f8f8fb;
+  text-align: center;
+}
+
+.clients-holder img {
+  filter: grayscale(100%);
+  width: 13%;
+  margin-top: 50px;
+}
+.clients-holder img:hover {
+  filter: grayscale(0%);
+}
+
+footer {
+  background-color: #353a3e;
+  text-align: center;
+  color: #8e8f8f;
+}
+footer a {
+  color: #8e8f8f;
+}
+footer .copy-right {
+  margin-top: 50px;
+}
+footer .copy-right span {
+  display: block;
+  margin-top: 15px;
+}
+footer h5 {
+  margin-bottom: 20px;
+}
+footer li {
+  line-height: 1.5;
+}
+
+.footer-holder {
+  text-align: left;
+}
+.footer-holder div {
+  width: 22%;
+}
+
+/* About page */
+.team {
+  background-color: #f8f8fb;
+}
+
+.team-subheading {
+  margin: 20px 0;
+}
+
+.team-card {
+  background-color: #fff;
+  width: 23%;
+  margin-top: 50px;
+  padding: 20px 0;
+  box-shadow: 2px 2px 30px lightgray;
+}
+.team-card img {
+  width: 100%;
+}
+.team-card span {
+  color: #dd3a45;
+}
+
+#about .solution {
+  background-color: #fff;
+}
+#about button {
+  background-color: #dd3a45;
+  color: #fff;
+}
+
+.about-intro {
+  background-color: #dd3a45;
+  padding: 80px;
+  color: #fff;
+  text-align: center;
+}
+.about-intro p {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.about-service {
+  margin-bottom: 20px;
+  line-height: 2;
+}
+.about-service span {
+  color: #dd3a45;
+  font-size: 20px;
+}
+
+.about-service-text div {
+  width: 45%;
+}
+.about-service-text img {
+  width: 100%;
+}
+
+.about-mission {
+  align-items: center;
+}
+.about-mission .about-mission-media {
+  width: 45%;
+}
+.about-mission .about-mission-media img {
+  width: 80%;
+}
+.about-mission .about-mission-holder {
+  width: 45%;
+}
+.about-mission .about-mission-holder img {
+  width: 30%;
+}
+.about-mission .about-mission-holder .about-mission-card {
+  align-items: center;
+  margin-bottom: 30px;
+}
+.about-mission .about-mission-holder .about-mission-card .fas {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.contact-info-holder {
+  text-align: center;
+  background-color: #f8f8fb;
+}
+.contact-info-holder p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.contact-info-holder i {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: lightgray;
+  color: #dd3a45;
+}
+.contact-info-holder address {
+  color: #acb3b8;
+}
+
+.let-us-know {
+  text-align: center;
+}
+.let-us-know button {
+  background-color: #dd3a45;
+  color: #fff;
+}
+
+.let-us-know-info {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.let-us-know-info p {
+  margin-top: 30px;
+}
+
+.map-holder input, .map-holder textarea {
+  width: 100%;
+  margin-left: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #acb3b8;
+}
+
+#service .service-card {
+  border: none;
+  text-align: left;
+}
+#service .service-card p {
+  color: gray;
+}
+#service .services, #service .team {
+  background-color: #f8f8fb;
+}
+#service .solution {
+  background-color: #fff;
+}
+
+.grab-deal {
+  background-color: #dd3a45;
+  padding: 30px;
+  text-align: center;
+}
+
+.grab-deal-article {
+  text-align: center;
+  color: #fff;
+}
+.grab-deal-article button {
+  background-color: #dd3a45;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.service-article-first .service-media {
+  width: 45%;
+}
+.service-article-first .service-media img {
+  width: 100%;
+}
+.service-article-first .service-consulting-text {
+  width: 45%;
+  text-align: center;
+  line-height: 1.5;
+}
+.service-article-first .service-consulting-text img {
+  width: 20%;
+}
+.service-article-first .service-consulting-text h2 {
+  margin: 20px 0;
+}
+
+.chart {
+  background-color: #f8f8fb;
+  text-align: center;
+  background-color: #f8f8fb;
+}
+
+.pricing-para {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.price-item {
+  background-color: #fff;
+  width: 31%;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+.price-item li {
+  margin-bottom: 10px;
+}
+.price-item ul {
+  margin-bottom: 30px;
+}
+.price-item span {
+  color: #acb3b8;
+}
+.price-item strong {
+  font-weight: 700;
+}
+.price-item button {
+  color: #dd3a45;
+  border: 1px solid #dd3a45;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.price-item .clr-btn {
+  background-color: #dd3a45;
+  color: #fff;
+}
+
+.amount {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.amout + li {
+  color: green;
+}
+
+.f-a-q {
+  text-align: center;
+}
+.f-a-q h2 {
+  margin-bottom: 20px;
+}
+
+.questions {
+  flex-wrap: wrap;
+}
+
+.question-card {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  width: 49%;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.question-card h5 {
+  margin-bottom: 20px;
+}
+
+#error h2 {
+  margin-bottom: 30px;
+}
+#error .contact-card-holder {
+  margin-top: 50px;
+}
+
+.navitem {
+  width: 100%;
+}
+
+.pages {
+  position: relative;
+  border-radius: 5px;
+}
+
+.blog {
+  position: relative;
+  border-radius: 5px;
+}
+
+.pages:hover .page-dropdown {
+  display: inline-block;
+}
+
+.page-dropdown {
+  position: absolute;
+  width: 140px;
+  background-color: #f8f8fb;
+  z-index: 99;
+  display: none;
+  top: 50px;
+  left: 0px;
+}
+
+.blog-dropdown {
+  position: absolute;
+  width: 140px;
+  background-color: #f8f8fb;
+  z-index: 99;
+  display: none;
+  top: 50px;
+  left: 0px;
+}
+
+.blog:hover .blog-dropdown {
+  display: inline-block;
+}
+
+.bar {
+  display: none;
+  color: #dd3a45;
+}
+
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .flex-100 {
+    flex: 0 1 100%;
+    margin-top: 30px;
+  }
+
+  .colomn {
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: none;
+    z-index: 999;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .brand {
+    position: fixed;
+    display: inline-block;
+    z-index: 9999;
+    top: 50px;
+    left: 100px;
+  }
+
+  .bar {
+    position: fixed;
+    display: inline-block;
+    z-index: 9999;
+    top: 50px;
+    right: 100px;
+    color: lightseagreen;
+  }
+
+  #toggle:checked ~ .navbar {
+    display: block;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .navbar {
+    position: fixed;
+    height: 100vh;
+    background-color: rgba(35, 90, 45, 0.7);
+    width: 100%;
+  }
+
+  .navitem {
+    margin-left: 45%;
+    margin-top: 200px;
+  }
+
+  .page-dropdown {
+    left: 100px;
+    top: 0;
+  }
+
+  .blog-dropdown {
+    left: 100px;
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
